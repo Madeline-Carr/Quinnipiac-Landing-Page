@@ -1,7 +1,39 @@
 //sass --watch Styles/styles.scss:Styles/styles.css
 
 @import "variables";
+//Global
+body {
+  margin: 0px;
+  padding: 0px;
+}
 
-h1 {
-  color: tomato;
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+//Hero Image
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/Images/Tower.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//Header
+header {
+  width: 100%;
+  .logo {
+    max-width: 65%;
+  }
+
+  nav {
+    width: 20%;
+    float: right;
+    img {
+      max-width: 50%;
+      margin-top: 50%;
+      margin-right: 600%;
+    }
+  }
 }
