@@ -66,7 +66,7 @@ h3 {
   font-weight: bold; }
 
 .hero-image {
-  background-image: url("/Images/Hero.jpg");
+  background-image: url("./Images/Hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -127,7 +127,7 @@ header {
   margin-top: -35px;
   z-index: -1;
   font-weight: bold;
-  background-image: url("/Images/WhitePattern.png");
+  background-image: url("./Images/WhitePattern.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -157,7 +157,7 @@ header {
   padding-bottom: 15px; }
 
 .links {
-  background-image: url("/Images/TwoQ-01-01.png");
+  background-image: url("./Images/TwoQ-01-01.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
