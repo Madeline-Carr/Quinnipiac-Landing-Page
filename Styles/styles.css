@@ -15,7 +15,7 @@ h2 {
   text-align: center;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.1em; }
+  font-size: 1.8129em; }
 
 h3 {
   text-align: center;
@@ -24,11 +24,14 @@ h3 {
   background-color: #0c2340;
   padding: 10px;
   font-size: 0.9em;
-  font-style: bold; }
+  font-weight: bold; }
 
 p {
   text-align: center;
   color: white; }
+
+.center {
+  text-align: center; }
 
 .wrapper {
   margin: 0 auto;
@@ -132,5 +135,11 @@ header {
   padding: 20px 0px;
   position: relative;
   bottom: 55px; }
+
+a {
+  color: #418fde;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold; }
 
 /*# sourceMappingURL=styles.css.map */
