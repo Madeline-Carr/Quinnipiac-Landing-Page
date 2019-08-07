@@ -21,6 +21,14 @@ h2 {
   font-size: 1.8129em;
 }
 
+input {
+  padding: 5px;
+  width: 90%;
+  margin: 10px 0px;
+  border: 2px solid $dark-gray;
+  color: $medium-dark-gray;
+  border-radius: 55px;
+}
 h3 {
   text-align: center;
   color: white;
@@ -113,11 +121,12 @@ header {
 //Form
 .form {
   bottom: 35px;
-
   box-shadow: 2px 6px 15px 15px rgba(0, 0, 0, 0.08);
 
+  font-weight: bold;
+  font-family: $arial;
   p {
-    color: black;
+    color: $navy;
   }
 }
 
