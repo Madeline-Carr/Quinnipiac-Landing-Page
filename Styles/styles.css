@@ -94,4 +94,23 @@ header {
   .bluePattern p {
     color: #0c2340; }
 
+.imgBanner {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.banner {
+  max-width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.height {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  bottom: 55px; }
+
 /*# sourceMappingURL=styles.css.map */
