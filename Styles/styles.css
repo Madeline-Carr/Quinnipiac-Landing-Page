@@ -30,9 +30,13 @@ h3 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #0c2340;
-  padding: 10px;
+  position: relative;
+  right: 7%;
+  padding: 10px 3.5%;
   font-size: 0.9em;
-  font-weight: bold; }
+  width: 107%;
+  font-weight: bold;
+  margin-top: 0px; }
 
 p {
   text-align: center;
@@ -47,9 +51,9 @@ p {
 
 .whiteBox {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   position: relative;
-  padding: 10px; }
+  padding: 6%; }
 
 button {
   display: table;
@@ -71,8 +75,8 @@ button {
 .icon {
   display: table;
   margin: 0 auto;
-  width: 10%;
-  padding-bottom: 60px; }
+  width: 15%;
+  padding-bottom: 30px; }
 
 hr {
   border-top: 5px solid white; }
@@ -90,20 +94,20 @@ hr {
   background-size: cover; }
 
 header {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 15px; }
   header .logo {
     max-width: 55%;
     padding-top: 10px; }
   header nav {
-    width: 20%;
     float: right; }
     header nav img {
+      float: right;
       max-width: 50%;
-      margin-top: 50%;
-      margin-right: 600%; }
+      margin-top: 50%; }
 
 .form {
-  bottom: 35px;
+  bottom: 4px;
   box-shadow: 2px 6px 15px 15px rgba(0, 0, 0, 0.08);
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif; }
@@ -114,9 +118,13 @@ header {
   padding: 20px 0px;
   background-color: #418fde;
   position: relative;
-  bottom: 55px;
+  bottom: 35px;
   z-index: -1;
-  font-weight: bold; }
+  font-weight: bold;
+  background-image: url("/Images/WhitePattern.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .bluePattern p {
     color: #0c2340; }
 
@@ -137,14 +145,14 @@ header {
   height: 200px;
   overflow: hidden;
   position: relative;
-  bottom: 55px; }
+  bottom: 35px; }
 
 .links {
   background-color: #0c2340;
   color: white;
   padding: 20px 0px;
   position: relative;
-  bottom: 55px; }
+  bottom: 35px; }
 
 a {
   color: #418fde;

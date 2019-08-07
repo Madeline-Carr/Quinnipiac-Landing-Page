@@ -34,9 +34,13 @@ h3 {
   color: white;
   font-family: $arial;
   background-color: $navy;
-  padding: 10px;
+  position: relative;
+  right: 7%;
+  padding: 10px 3.5%;
   font-size: 0.9em;
+  width: 107%;
   font-weight: bold;
+  margin-top: 0px;
 }
 p {
   text-align: center;
@@ -53,10 +57,11 @@ p {
 
 .whiteBox {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   position: relative;
-  padding: 10px;
+  padding: 6%;
 }
+
 button {
   display: table;
   margin: 0 auto;
@@ -77,8 +82,8 @@ button {
 .icon {
   display: table;
   margin: 0 auto;
-  width: 10%;
-  padding-bottom: 60px;
+  width: 15%;
+  padding-bottom: 30px;
 }
 hr {
   border-top: 5px solid white;
@@ -101,18 +106,18 @@ hr {
 //Header
 header {
   width: 100%;
+  padding-bottom: 15px;
   .logo {
     max-width: 55%;
     padding-top: 10px;
   }
 
   nav {
-    width: 20%;
     float: right;
     img {
+      float: right;
       max-width: 50%;
       margin-top: 50%;
-      margin-right: 600%;
     }
   }
 }
@@ -120,9 +125,8 @@ header {
 //Hero text
 //Form
 .form {
-  bottom: 35px;
+  bottom: 4px;
   box-shadow: 2px 6px 15px 15px rgba(0, 0, 0, 0.08);
-
   font-weight: bold;
   font-family: $arial;
   p {
@@ -136,9 +140,13 @@ header {
   padding: 20px 0px;
   background-color: $sky-blue;
   position: relative;
-  bottom: 55px;
+  bottom: 35px;
   z-index: -1;
   font-weight: bold;
+  background-image: url("/Images/WhitePattern.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   p {
     color: $navy;
@@ -165,7 +173,7 @@ header {
   height: 200px;
   overflow: hidden;
   position: relative;
-  bottom: 55px;
+  bottom: 35px;
 }
 
 //Links
@@ -175,7 +183,7 @@ header {
   color: white;
   padding: 20px 0px;
   position: relative;
-  bottom: 55px;
+  bottom: 35px;
 }
 
 a {
