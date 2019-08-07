@@ -15,9 +15,9 @@
       <!-- Header -->
       <header>
         <div class="wrapper">
-          <img src="./Images/WhiteLogo.png" alt=" " class="logo" />
+          <img src="./Images/WhiteLogo.png" alt="Quinnipiac Logo" class="logo" />
           <nav>
-            <img src="./Images/Hamburger.svg" alt="" />
+            <img src="./Images/Hamburger.svg" alt="Menu" />
           </nav>
         </div>
       </header>
@@ -32,7 +32,7 @@
         </p>
         <button>Get your tickets!</button>
         <br />
-        <img src="/Images/DownArrow.svg" alt="" class="icon" />
+        <img src="/Images/DownArrow.svg" alt="" class="icon down" />
       </div>
     </div>
     <!-- Go Bobcats! Banner -->
@@ -46,21 +46,29 @@
           Is this your most up-to-date contact information?
         </h3>
         <div class="wrapper">
-          
+            <div class="threeGrid">
             <p>Name</p>
-            <input type="text" name="firstname" placeholder="First Name" />
-            <input type="text" name="firstname" placeholder="Last Name" />
-         
+            
+            <input type="text" name="firstname"  placeholder="First Name" label="First Name" />
+            <input type="text" name="firstname" placeholder="Last Name" label="Last Name"/>
+          </div>
         
-            <p>E-mail</p>
-            <input
-              type="text"
-              name="e-mail"
-              placeholder="e.g. quinnipiac@gmail.com"
-            />
-         
+            <div class="twoGrid">
+                <p>E-mail</p>
+                <input
+                  type="text"
+                  name="e-mail"
+                  placeholder="e.g. quinnipiac@gmail.com"
+                  label="e-mail"
+
+                />
+             
+            </div>
+            <div class="phoneGrid">
+
             <p>Cell Phone Number</p>
-            <input type="text" name="e-mail" placeholder="(888)888-8888" />
+            <input type="text" name="e-mail" placeholder="(888)888-8888" label="e-mail"/>
+            </div>
       
          </div>
            <button class="submit" type="submit" value="Submit">Submit</button>
@@ -82,21 +90,13 @@
 
     <!-- Hockey Image -->
     <div class="banner">
-      <img src="/Images/HockeyPlayer.jpg" alt="" class="imgBackground" />
+      <img src="/Images/HockeyPlayer.jpg" alt="Hockey Player" class="imgBackground" />
     </div>
 
     <!-- Links -->
 
     <div class="links">
-      <!-- 
-       <div class="qRight">
-        <img src="/Images/WhiteLogoQ.png" alt="" />
-      </div>
-      <div class="qLeft">
-        <img src="/Images/WhiteLogoQ.png" alt="" />
-      </div>
-    
-     -->
+      
       <div class="wrapper">
         <img src="/Images/WhiteLogoQ.png" alt="" class="largeIcon" />
 
@@ -108,12 +108,13 @@
         <div class="whiteBox">
           <div class=" center container">
             <div class="item">
-              <img src="./Images/Students.jpg" alt="" class="squareImage" />
+              <img src="./Images/Students.jpg" alt="Students Outside" class="squareImage" />
               <a href="#">
                 You’ll have all the help you need navigating the financial aid
                 process.
               </a>
-              <img src="/Images/BlueArrow.svg" alt="" class="icon arrow" />
+              <img src="/Images/BlueArrow.svg" alt="Arrow" class="icon arrow" />
+              
             </div>
 
             <div class="item">
@@ -130,7 +131,7 @@
             </div>
 
             <div class="item">
-              <img src="./Images/Tables.jpg" alt="" class="squareImage" />
+              <img src="./Images/Tables.jpg" alt="The Rocky Top Student Center" class="squareImage" />
               <a href="#">
                 The Rocky Top Student Center has something for everyone …
               </a>
@@ -138,7 +139,7 @@
             </div>
 
             <div class="item">
-              <img src="./Images/Tower.jpg" alt="" class="squareImage" />
+              <img src="./Images/Tower.jpg" alt="A Building" class="squareImage" />
               <a href="#">
                 With 53 undergraduate majors to choose from, you’re bound to
                 find your fit.
@@ -149,7 +150,7 @@
         </div>
       </div>
       <div class="hidden">
-        <img src="/Images/UpArrow.svg" alt="" class="icon" />
+        <img src="/Images/UpArrow.svg" alt="Back to Top" class="icon" />
         <button>Back to Top</button>
       </div>
     </div>

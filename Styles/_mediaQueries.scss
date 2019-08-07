@@ -2,8 +2,12 @@
 
 //Medium Screens
 @media only screen and (min-width: 600px) {
+  nav {
+    margin-top: 30px;
+  }
   .form {
     bottom: 20px;
+    margin-top: -85px;
     .wrapper {
       width: 100%;
     }
@@ -85,6 +89,45 @@
   input {
     font-size: 0.9em;
   }
+
+  input {
+    height: 18px;
+  }
+
+  .threeGrid {
+    display: grid;
+    grid-template-columns: 50px auto auto;
+    grid-gap: 5%;
+  }
+
+  .twoGrid {
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-gap: 5%;
+  }
+
+  .phoneGrid {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-gap: 3%;
+  }
+
+  //Links
+  .item {
+    position: relative;
+    height: 280px;
+  }
+
+  .item .icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+  }
+
+  .down {
+    padding-bottom: 55px;
+  }
 }
 
 //Desktop
@@ -104,10 +147,28 @@
     display: none;
   }
 
+  .item {
+    position: relative;
+    height: 300px;
+  }
   .icon {
     display: table;
     margin: 0 auto;
     width: 50px;
     padding: 10px 0 10px 0;
+  }
+  .form {
+    margin-top: -120px;
+  }
+  .down {
+    padding-bottom: 60px;
+  }
+}
+
+//Larger Screens
+
+@media only screen and (min-width: 1200px) {
+  .item {
+    height: 280px;
   }
 }
