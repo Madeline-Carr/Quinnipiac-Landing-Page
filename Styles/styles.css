@@ -23,7 +23,8 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #0c2340;
   padding: 10px;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  font-style: bold; }
 
 p {
   text-align: center;
@@ -32,6 +33,11 @@ p {
 .wrapper {
   margin: 0 auto;
   width: 80%; }
+
+.whiteBox {
+  background-color: white;
+  border-radius: 20px;
+  position: relative; }
 
 button {
   display: table;
@@ -56,6 +62,15 @@ button {
   width: 10%;
   padding-bottom: 60px; }
 
+hr {
+  border-top: 5px solid white; }
+
+.largeIcon {
+  display: table;
+  margin: 0 auto;
+  width: 30%;
+  padding-bottom: 15px; }
+
 .hero-image {
   background-image: url("/Images/Hero.jpg");
   background-position: center;
@@ -65,7 +80,8 @@ button {
 header {
   width: 100%; }
   header .logo {
-    max-width: 65%; }
+    max-width: 55%;
+    padding-top: 10px; }
   header nav {
     width: 20%;
     float: right; }
@@ -75,9 +91,6 @@ header {
       margin-right: 600%; }
 
 .form {
-  background-color: white;
-  border-radius: 20px;
-  position: relative;
   bottom: 35px;
   padding: 10px;
   box-shadow: 2px 6px 15px 15px rgba(0, 0, 0, 0.08); }
@@ -110,6 +123,13 @@ header {
 .height {
   height: 200px;
   overflow: hidden;
+  position: relative;
+  bottom: 55px; }
+
+.links {
+  background-color: #0c2340;
+  color: white;
+  padding: 20px 0px;
   position: relative;
   bottom: 55px; }
 

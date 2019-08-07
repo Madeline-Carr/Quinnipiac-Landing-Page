@@ -28,6 +28,7 @@ h3 {
   background-color: $navy;
   padding: 10px;
   font-size: 0.9em;
+  font-style: bold;
 }
 p {
   text-align: center;
@@ -39,6 +40,11 @@ p {
   width: 80%;
 }
 
+.whiteBox {
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
 button {
   display: table;
   margin: 0 auto;
@@ -62,7 +68,15 @@ button {
   width: 10%;
   padding-bottom: 60px;
 }
-
+hr {
+  border-top: 5px solid white;
+}
+.largeIcon {
+  display: table;
+  margin: 0 auto;
+  width: 30%;
+  padding-bottom: 15px;
+}
 //Hero Image
 .hero-image {
   background-image: url("/Images/Hero.jpg");
@@ -75,7 +89,8 @@ button {
 header {
   width: 100%;
   .logo {
-    max-width: 65%;
+    max-width: 55%;
+    padding-top: 10px;
   }
 
   nav {
@@ -92,9 +107,6 @@ header {
 //Hero text
 //Form
 .form {
-  background-color: white;
-  border-radius: 20px;
-  position: relative;
   bottom: 35px;
   padding: 10px;
   box-shadow: 2px 6px 15px 15px rgba(0, 0, 0, 0.08);
@@ -138,6 +150,16 @@ header {
 .height {
   height: 200px;
   overflow: hidden;
+  position: relative;
+  bottom: 55px;
+}
+
+//Links
+
+.links {
+  background-color: $navy;
+  color: white;
+  padding: 20px 0px;
   position: relative;
   bottom: 55px;
 }
