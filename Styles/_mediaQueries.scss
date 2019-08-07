@@ -1,14 +1,98 @@
 //Media Queries
 
-//Desktop
-@media only screen and (min-width: 992px) {
+//Medium Screens
+@media only screen and (min-width: 600px) {
+  .form {
+    bottom: 20px;
+    br {
+      display: none;
+    }
+    input {
+      width: 50%;
+    }
+  }
+  button {
+    width: 37%;
+    border-radius: 10px;
+  }
+  .wrapper {
+    width: 65%;
+  }
+  .smallWrapper {
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 35px;
+  }
   header {
+    padding-bottom: 5%;
     .logo {
       max-width: 30%;
       padding-top: 20px;
     }
   }
-  .wrapper {
-    width: 75%;
+
+  .hidden {
+    display: none;
+  }
+
+  h2 {
+    font-size: 2.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .blueBar {
+    height: 40px;
+    width: 100%;
+    background-color: $navy;
+    margin-top: 5%;
+  }
+
+  .qRight {
+    position: absolute;
+    right: 450px;
+    opacity: 0.05;
+    margin-top: 0%;
+  }
+
+  .qLeft {
+    position: absolute;
+    left: 450px;
+    opacity: 0.05;
+    margin-top: 0%;
+  }
+
+  .height {
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .largeIcon {
+    display: table;
+    margin: 0 auto;
+    width: 15%;
+    padding-bottom: 15px;
+    opacity: 0.5;
   }
 }
+
+//Desktop
+
+@media only screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    justify-content: space-between;
+  }
+}
+
+/*
+
+  .arrow {
+    position: absolute;
+    bottom: 0;
+  }
+  */

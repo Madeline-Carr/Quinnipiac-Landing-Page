@@ -131,7 +131,6 @@ header {
 
 .imgBanner {
   width: 100%;
-  height: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -143,7 +142,7 @@ header {
   background-size: cover; }
 
 .height {
-  height: 200px;
+  height: 180px;
   overflow: hidden; }
 
 .links {
@@ -157,16 +156,8 @@ a {
   font-size: 1.5em;
   font-weight: bold; }
 
-@media only screen and (min-width: 992px) {
-  header .logo {
-    max-width: 30%;
-    padding-top: 20px; }
-
-  .wrapper {
-    width: 75%; } }
 .squareImage {
-  width: 200px;
-  height: 200px;
+  width: 140px;
   margin-bottom: 10px;
   display: block;
   margin: 0 auto; }
@@ -177,5 +168,82 @@ a {
   width: 100%;
   background-color: #0c2340;
   margin-top: 30px; }
+
+@media only screen and (min-width: 600px) {
+  .form {
+    bottom: 20px; }
+    .form br {
+      display: none; }
+    .form input {
+      width: 50%; }
+
+  button {
+    width: 37%;
+    border-radius: 10px; }
+
+  .wrapper {
+    width: 65%; }
+
+  .smallWrapper {
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 35px; }
+
+  header {
+    padding-bottom: 5%; }
+    header .logo {
+      max-width: 30%;
+      padding-top: 20px; }
+
+  .hidden {
+    display: none; }
+
+  h2 {
+    font-size: 2.4em; }
+
+  h3 {
+    font-size: 1.2em; }
+
+  .blueBar {
+    height: 40px;
+    width: 100%;
+    background-color: #0c2340;
+    margin-top: 5%; }
+
+  .qRight {
+    position: absolute;
+    right: 450px;
+    opacity: 0.05;
+    margin-top: 0%; }
+
+  .qLeft {
+    position: absolute;
+    left: 450px;
+    opacity: 0.05;
+    margin-top: 0%; }
+
+  .height {
+    height: 300px;
+    overflow: hidden; }
+
+  .largeIcon {
+    display: table;
+    margin: 0 auto;
+    width: 15%;
+    padding-bottom: 15px;
+    opacity: 0.5; } }
+@media only screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    justify-content: space-between; } }
+/*
+
+  .arrow {
+    position: absolute;
+    bottom: 0;
+  }
+  */
 
 /*# sourceMappingURL=styles.css.map */
