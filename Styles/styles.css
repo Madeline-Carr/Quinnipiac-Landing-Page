@@ -6,10 +6,29 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 90%; }
+  width: 80%; }
+
+button {
+  display: table;
+  margin: 0 auto;
+  background-color: #418fde;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  width: 80%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-weight: bold; }
+
+.icon {
+  display: table;
+  margin: 0 auto;
+  width: 10%;
+  padding-bottom: 15px; }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/Tower.jpg");
+  background-image: url("/Images/Hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -25,5 +44,14 @@ header {
       max-width: 50%;
       margin-top: 50%;
       margin-right: 600%; }
+
+h2 {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif; }
+
+p {
+  text-align: center;
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */
