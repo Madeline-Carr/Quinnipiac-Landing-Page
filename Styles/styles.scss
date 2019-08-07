@@ -2,9 +2,35 @@
 
 @import "variables";
 //Global
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   margin: 0px;
   padding: 0px;
+}
+div {
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-family: $arial;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  font-family: $arial;
+  background-color: $navy;
+  padding: 10px;
+  font-size: 0.9em;
+}
+p {
+  text-align: center;
+  color: white;
 }
 
 .wrapper {
@@ -17,20 +43,25 @@ button {
   margin: 0 auto;
   background-color: $sky-blue;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 15px;
   width: 80%;
   color: white;
   font-family: $arial;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: bold;
+}
+.gold {
+  background-color: $gold;
+  color: $navy;
 }
 .icon {
   display: table;
   margin: 0 auto;
   width: 10%;
-  padding-bottom: 15px;
+  padding-bottom: 60px;
 }
+
 //Hero Image
 .hero-image {
   background-image: url("/Images/Hero.jpg");
@@ -58,12 +89,25 @@ header {
 }
 
 //Hero text
-h2 {
-  text-align: center;
-  color: white;
-  font-family: $arial;
+//Form
+.form {
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  bottom: 35px;
+  padding: 10px;
+  box-shadow: 2px 6px 15px 15px rgba(0, 0, 0, 0.08);
+
+  p {
+    color: black;
+  }
 }
-p {
-  text-align: center;
-  color: white;
+
+//Go cats
+
+.bluePattern {
+  background-color: blue;
+  p {
+    color: red;
+  }
 }
