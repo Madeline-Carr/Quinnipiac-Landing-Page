@@ -58,11 +58,20 @@ button {
   font-family: $arial;
   font-size: 0.9em;
   font-weight: bold;
+  &:hover {
+    color: $navy;
+    background-color: white;
+  }
 }
 .submit {
   background-color: $gold;
   color: $navy;
   margin-top: 20px;
+
+  &:hover {
+    color: white;
+    background-color: $navy;
+  }
 }
 .icon {
   display: table;
@@ -180,7 +189,10 @@ header {
 //Links
 
 .links {
-  background-color: $navy;
+  background-image: url("/Images/TwoQ-01-01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   padding: 20px 0px;
 }

@@ -51,11 +51,17 @@ button {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
   font-weight: bold; }
+  button:hover {
+    color: #0c2340;
+    background-color: white; }
 
 .submit {
   background-color: #ffb819;
   color: #0c2340;
   margin-top: 20px; }
+  .submit:hover {
+    color: white;
+    background-color: #0c2340; }
 
 .icon {
   display: table;
@@ -145,7 +151,10 @@ header {
   background-size: cover; }
 
 .links {
-  background-color: #0c2340;
+  background-image: url("/Images/TwoQ-01-01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   padding: 20px 0px; }
 
@@ -178,6 +187,8 @@ a {
 @media only screen and (min-width: 600px) {
   .form {
     bottom: 20px; }
+    .form .wrapper {
+      width: 100%; }
 
   button {
     width: 37%;
@@ -242,6 +253,9 @@ a {
     justify-content: space-between; }
 
   a {
+    font-size: 0.9em; }
+
+  input {
     font-size: 0.9em; } }
 @media only screen and (min-width: 992px) {
   .container {
