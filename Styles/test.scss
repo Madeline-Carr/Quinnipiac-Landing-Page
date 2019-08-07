@@ -1,31 +1,25 @@
-//sass --watch Styles/styles.scss:Styles/styles.css
-
-@import "variables";
-//Global
-html,
-body {
-  overflow-x: hidden;
+input {
+  padding: 5px;
+  width: 90%;
+  margin: 10px 0px;
+  border: 2px solid $dark-gray;
+  color: $medium-dark-gray;
+  border-radius: 55px;
 }
-body {
-  margin: 0px;
-  padding: 0px;
-}
-div {
-  box-sizing: border-box;
-}
-
-h2 {
+h3 {
   text-align: center;
   color: white;
   font-family: $arial;
-  font-size: 1.8129em;
+  background-color: $navy;
+  position: relative;
+  right: 7%;
+  padding: 10px 3.5%;
+  font-size: 0.9em;
+  width: 107%;
+  font-weight: bold;
+  margin-top: 0px;
 }
 
-h3 {
-  font-family: $arial;
-  font-size: 0.9em;
-  font-weight: bold;
-}
 p {
   text-align: center;
   color: white;
@@ -74,6 +68,12 @@ hr {
   border-top: 5px solid white;
   margin-bottom: 20px;
 }
+.largeIcon {
+  display: table;
+  margin: 0 auto;
+  width: 30%;
+  padding-bottom: 15px;
+}
 
 //Hero Image
 .hero-image {
@@ -91,6 +91,7 @@ header {
     max-width: 55%;
     padding-top: 10px;
   }
+
   nav {
     float: right;
     img {
@@ -101,43 +102,19 @@ header {
   }
 }
 
+//Hero text
 //Form
 .form {
-  bottom: 6px;
+  bottom: 4px;
   box-shadow: 2px 6px 15px 15px rgba(0, 0, 0, 0.08);
   font-weight: bold;
   font-family: $arial;
-
-  input {
-    padding: 5px;
-    width: 100%;
-    margin: 10px 0px;
-    border: 2px solid $dark-gray;
-    color: $medium-dark-gray;
-    border-radius: 55px;
-    font-weight: bold;
-  }
   p {
     color: $navy;
-    text-align: left;
-  }
-
-  .darkBanner {
-    text-align: center;
-    color: white;
-    font-family: $arial;
-    background-color: $navy;
-    position: relative;
-    right: 7%;
-    padding: 10px 3.5%;
-    font-size: 0.9em;
-    width: 107%;
-    font-weight: bold;
-    margin-top: 0px;
   }
 }
 
-//Go Bobcats!
+//Go cats
 
 .bluePattern {
   padding: 20px 0px;
@@ -153,28 +130,27 @@ header {
   p {
     color: $navy;
   }
-
-  .blueBar {
-    position: absolute;
-    height: 50px;
-    width: 100%;
-    background-color: $navy;
-    margin-top: 30px;
-  }
 }
 
-//Hockey Photo Banner
+//Image Banner
+.imgBanner {
+  width: 100%;
+  // height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .banner {
-  height: 180px;
-  overflow: hidden;
-}
-
-.imgBackground {
   max-width: 100%;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.height {
+  height: 180px;
+  overflow: hidden;
 }
 
 //Links
@@ -183,13 +159,6 @@ header {
   background-color: $navy;
   color: white;
   padding: 20px 0px;
-}
-
-.largeIcon {
-  display: table;
-  margin: 0 auto;
-  width: 30%;
-  padding-bottom: 15px;
 }
 
 a {
@@ -203,20 +172,14 @@ a {
   width: 140px;
   margin-bottom: 10px;
   display: block;
-  margin: 10px auto;
+  margin: 0 auto;
+}
+.blueBar {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: $navy;
+  margin-top: 30px;
 }
 
-///TESTING
-
-.flex {
-  display: flex;
-}
-
-.item {
-  position: relative;
-
-  .arrow {
-    align-self: end;
-  }
-}
 @import "mediaQueries";

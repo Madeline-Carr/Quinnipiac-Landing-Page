@@ -4,12 +4,6 @@
 @media only screen and (min-width: 600px) {
   .form {
     bottom: 20px;
-    br {
-      display: none;
-    }
-    input {
-      width: 50%;
-    }
   }
   button {
     width: 37%;
@@ -34,7 +28,6 @@
   .hidden {
     display: none;
   }
-
   h2 {
     font-size: 2.4em;
   }
@@ -64,7 +57,7 @@
     margin-top: 0%;
   }
 
-  .height {
+  .banner {
     height: 300px;
     overflow: hidden;
   }
@@ -76,6 +69,16 @@
     padding-bottom: 15px;
     opacity: 0.5;
   }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    justify-content: space-between;
+  }
+
+  a {
+    font-size: 0.9em;
+  }
 }
 
 //Desktop
@@ -86,13 +89,19 @@
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
     justify-content: space-between;
+    .arrow {
+      align-self: end;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .icon {
+    display: table;
+    margin: 0 auto;
+    width: 50px;
+    padding: 10px 0 10px 0;
   }
 }
-
-/*
-
-  .arrow {
-    position: absolute;
-    bottom: 0;
-  }
-  */
