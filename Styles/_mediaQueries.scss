@@ -2,12 +2,13 @@
 
 //Desktop
 @media only screen and (min-width: 992px) {
-  .fourColumns {
-    display: flex;
-    justify-content: center;
-    .fourColumns > div {
-      padding: 100px;
+  header {
+    .logo {
+      max-width: 30%;
+      padding-top: 20px;
     }
-    //  grid-template-rows: auto auto auto auto;
+  }
+  .wrapper {
+    width: 75%;
   }
 }
