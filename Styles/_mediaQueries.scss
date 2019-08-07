@@ -2,4 +2,12 @@
 
 //Desktop
 @media only screen and (min-width: 992px) {
+  .fourColumns {
+    display: flex;
+    justify-content: center;
+    .fourColumns > div {
+      padding: 100px;
+    }
+    //  grid-template-rows: auto auto auto auto;
+  }
 }

@@ -142,8 +142,7 @@ header {
 .bluePattern {
   padding: 20px 0px;
   background-color: $sky-blue;
-  position: relative;
-  bottom: 35px;
+  margin-top: -35px;
   z-index: -1;
   font-weight: bold;
   background-image: url("/Images/WhitePattern.png");
@@ -175,8 +174,6 @@ header {
 .height {
   height: 200px;
   overflow: hidden;
-  position: relative;
-  bottom: 35px;
 }
 
 //Links
@@ -185,8 +182,6 @@ header {
   background-color: $navy;
   color: white;
   padding: 20px 0px;
-  position: relative;
-  bottom: 35px;
 }
 
 a {
@@ -202,4 +197,13 @@ a {
   width: 200px;
   height: 200px;
   margin-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.blueBar {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: $navy;
+  margin-top: 30px;
 }
