@@ -51,7 +51,7 @@ p {
 
 .whiteBox {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 18px;
   position: relative;
   padding: 6%; }
 
@@ -68,18 +68,20 @@ button {
   font-size: 0.9em;
   font-weight: bold; }
 
-.gold {
+.submit {
   background-color: #ffb819;
-  color: #0c2340; }
+  color: #0c2340;
+  margin-top: 20px; }
 
 .icon {
   display: table;
   margin: 0 auto;
-  width: 15%;
-  padding-bottom: 30px; }
+  width: 50px;
+  padding: 20px 0 30px 0; }
 
 hr {
-  border-top: 5px solid white; }
+  border-top: 5px solid white;
+  margin-bottom: 20px; }
 
 .largeIcon {
   display: table;
@@ -159,5 +161,10 @@ a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: bold; }
+
+.squareImage {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
