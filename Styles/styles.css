@@ -8,30 +8,25 @@ body {
   margin: 0px;
   padding: 0px; }
 
-div {
-  box-sizing: border-box; }
-
-h2 {
-  text-align: center;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.8129em; }
-
-h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
-  font-weight: bold; }
-
-p {
-  text-align: center;
-  color: white; }
+.wrapper {
+  margin: 0 auto;
+  width: 80%; }
 
 .center {
   text-align: center; }
 
-.wrapper {
+.flex {
+  display: flex; }
+
+.icon {
+  display: table;
   margin: 0 auto;
-  width: 80%; }
+  width: 50px;
+  padding: 10px 0 10px 0; }
+
+hr {
+  border-top: 5px solid white;
+  margin-bottom: 20px; }
 
 .whiteBox {
   background-color: white;
@@ -55,23 +50,20 @@ button {
     color: #0c2340;
     background-color: white; }
 
-.submit {
-  background-color: #ffb819;
-  color: #0c2340;
-  margin-top: 20px; }
-  .submit:hover {
-    color: white;
-    background-color: #0c2340; }
+p {
+  text-align: center;
+  color: white; }
 
-.icon {
-  display: table;
-  margin: 0 auto;
-  width: 50px;
-  padding: 10px 0 10px 0; }
+h2 {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8129em; }
 
-hr {
-  border-top: 5px solid white;
-  margin-bottom: 20px; }
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold; }
 
 .hero-image {
   background-image: url("/Images/Hero.jpg");
@@ -96,7 +88,8 @@ header {
   bottom: 6px;
   box-shadow: 2px 6px 15px 15px rgba(0, 0, 0, 0.08);
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -95px; }
   .form input {
     padding: 5px;
     width: 100%;
@@ -120,6 +113,13 @@ header {
     width: 107%;
     font-weight: bold;
     margin-top: 0px; }
+  .form .submit {
+    background-color: #ffb819;
+    color: #0c2340;
+    margin-top: 20px; }
+    .form .submit:hover {
+      color: white;
+      background-color: #0c2340; }
 
 .bluePattern {
   padding: 20px 0px;
@@ -133,12 +133,12 @@ header {
   background-size: cover; }
   .bluePattern p {
     color: #0c2340; }
-  .bluePattern .blueBar {
-    position: absolute;
-    height: 50px;
-    width: 100%;
-    background-color: #0c2340;
-    margin-top: 30px; }
+
+.blueBar {
+  height: 40px;
+  width: 100%;
+  background-color: #0c2340;
+  margin-top: 50px; }
 
 .banner {
   height: 180px;
@@ -150,6 +150,12 @@ header {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.largeIcon {
+  display: table;
+  margin: 0 auto;
+  width: 30%;
+  padding-bottom: 15px; }
+
 .links {
   background-image: url("/Images/TwoQ-01-01.png");
   background-position: center;
@@ -157,12 +163,6 @@ header {
   background-size: cover;
   color: white;
   padding: 20px 0px; }
-
-.largeIcon {
-  display: table;
-  margin: 0 auto;
-  width: 30%;
-  padding-bottom: 15px; }
 
 a {
   color: #418fde;
@@ -176,9 +176,6 @@ a {
   display: block;
   margin: 10px auto; }
 
-.flex {
-  display: flex; }
-
 .item {
   position: relative; }
   .item .arrow {
@@ -188,15 +185,6 @@ a {
   padding-bottom: 30px; }
 
 @media only screen and (min-width: 600px) {
-  nav {
-    margin-top: 30px; }
-
-  .form {
-    bottom: 20px;
-    margin-top: -85px; }
-    .form .wrapper {
-      width: 100%; }
-
   button {
     width: 37%;
     border-radius: 10px; }
@@ -209,12 +197,6 @@ a {
     margin: 0 auto;
     padding-bottom: 35px; }
 
-  header {
-    padding-bottom: 5%; }
-    header .logo {
-      max-width: 30%;
-      padding-top: 20px; }
-
   .hidden {
     display: none; }
 
@@ -224,49 +206,34 @@ a {
   h3 {
     font-size: 1.2em; }
 
-  .blueBar {
-    height: 40px;
-    width: 100%;
-    background-color: #0c2340;
-    margin-top: 5%; }
-
-  .qRight {
-    position: absolute;
-    right: 450px;
-    opacity: 0.05;
-    margin-top: 0%; }
-
-  .qLeft {
-    position: absolute;
-    left: 450px;
-    opacity: 0.05;
-    margin-top: 0%; }
-
-  .banner {
-    height: 300px;
-    overflow: hidden; }
-
-  .largeIcon {
-    display: table;
-    margin: 0 auto;
-    width: 20%;
-    padding-bottom: 15px;
-    opacity: 0.5; }
-
   .container {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
     justify-content: space-between; }
 
-  a {
-    font-size: 0.9em; }
+  header {
+    padding-bottom: 5%; }
+    header .logo {
+      max-width: 30%;
+      padding-top: 20px; }
+    header nav {
+      margin-top: 1.5%; }
 
-  input {
-    font-size: 0.9em; }
+  .form {
+    bottom: 20px;
+    margin-top: -85px; }
+    .form .wrapper {
+      width: 100%; }
+    .form input {
+      font-size: 0.9em;
+      height: 18px; }
 
-  input {
-    height: 18px; }
+  .blueBar {
+    height: 40px;
+    width: 100%;
+    background-color: #0c2340;
+    margin-top: 5%; }
 
   .threeGrid {
     display: grid;
@@ -283,29 +250,31 @@ a {
     grid-template-columns: 150px auto;
     grid-gap: 3%; }
 
-  .item {
-    position: relative;
-    height: 280px; }
+  .banner {
+    height: 300px; }
 
-  .item .icon {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -20px; }
+  .largeIcon {
+    width: 20%;
+    opacity: 0.5; }
+
+  a {
+    font-size: 0.9em; }
+    a:hover {
+      color: #0c2340; }
+
+  .item {
+    height: 280px; }
+    .item .icon {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -20px; }
 
   .down {
     padding-bottom: 55px; } }
 @media only screen and (min-width: 992px) {
   .container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    justify-content: space-between; }
-    .container .arrow {
-      align-self: end; }
-
-  .hidden {
-    display: none; }
+    grid-template-columns: auto auto auto auto; }
 
   .item {
     position: relative;

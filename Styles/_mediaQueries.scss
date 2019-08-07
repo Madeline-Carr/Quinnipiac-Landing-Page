@@ -2,34 +2,20 @@
 
 //Medium Screens
 @media only screen and (min-width: 600px) {
-  nav {
-    margin-top: 30px;
-  }
-  .form {
-    bottom: 20px;
-    margin-top: -85px;
-    .wrapper {
-      width: 100%;
-    }
-  }
+  //Global
   button {
     width: 37%;
     border-radius: 10px;
   }
+
   .wrapper {
     width: 65%;
   }
+
   .smallWrapper {
     width: 65%;
     margin: 0 auto;
     padding-bottom: 35px;
-  }
-  header {
-    padding-bottom: 5%;
-    .logo {
-      max-width: 30%;
-      padding-top: 20px;
-    }
   }
 
   .hidden {
@@ -43,39 +29,6 @@
     font-size: 1.2em;
   }
 
-  .blueBar {
-    height: 40px;
-    width: 100%;
-    background-color: $navy;
-    margin-top: 5%;
-  }
-
-  .qRight {
-    position: absolute;
-    right: 450px;
-    opacity: 0.05;
-    margin-top: 0%;
-  }
-
-  .qLeft {
-    position: absolute;
-    left: 450px;
-    opacity: 0.05;
-    margin-top: 0%;
-  }
-
-  .banner {
-    height: 300px;
-    overflow: hidden;
-  }
-
-  .largeIcon {
-    display: table;
-    margin: 0 auto;
-    width: 20%;
-    padding-bottom: 15px;
-    opacity: 0.5;
-  }
   .container {
     display: grid;
     grid-template-columns: auto auto;
@@ -83,15 +36,35 @@
     justify-content: space-between;
   }
 
-  a {
-    font-size: 0.9em;
-  }
-  input {
-    font-size: 0.9em;
-  }
+  //Header
+  header {
+    padding-bottom: 5%;
+    .logo {
+      max-width: 30%;
+      padding-top: 20px;
+    }
 
-  input {
-    height: 18px;
+    nav {
+      margin-top: 1.5%;
+    }
+  }
+  //Form
+  .form {
+    bottom: 20px;
+    margin-top: -85px;
+    .wrapper {
+      width: 100%;
+    }
+    input {
+      font-size: 0.9em;
+      height: 18px;
+    }
+  }
+  .blueBar {
+    height: 40px;
+    width: 100%;
+    background-color: $navy;
+    margin-top: 5%;
   }
 
   .threeGrid {
@@ -112,19 +85,33 @@
     grid-gap: 3%;
   }
 
+  //Hockey Image
+  .banner {
+    height: 300px;
+  }
+
   //Links
+  .largeIcon {
+    width: 20%;
+    opacity: 0.5;
+  }
+
+  a {
+    font-size: 0.9em;
+    &:hover {
+      color: $navy;
+    }
+  }
+
   .item {
-    position: relative;
     height: 280px;
+    .icon {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -20px;
+    }
   }
-
-  .item .icon {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -20px;
-  }
-
   .down {
     padding-bottom: 55px;
   }
@@ -134,19 +121,8 @@
 
 @media only screen and (min-width: 992px) {
   .container {
-    display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    justify-content: space-between;
-    .arrow {
-      align-self: end;
-    }
   }
-
-  .hidden {
-    display: none;
-  }
-
   .item {
     position: relative;
     height: 300px;

@@ -1,7 +1,7 @@
 //sass --watch Styles/styles.scss:Styles/styles.css
 
 @import "variables";
-//Global
+//Global Styles
 html,
 body {
   overflow-x: hidden;
@@ -10,33 +10,29 @@ body {
   margin: 0px;
   padding: 0px;
 }
-div {
-  box-sizing: border-box;
-}
-
-h2 {
-  text-align: center;
-  color: white;
-  font-family: $arial;
-  font-size: 1.8129em;
-}
-
-h3 {
-  font-family: $arial;
-  font-size: 0.9em;
-  font-weight: bold;
-}
-p {
-  text-align: center;
-  color: white;
-}
-.center {
-  text-align: center;
-}
 
 .wrapper {
   margin: 0 auto;
   width: 80%;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.icon {
+  display: table;
+  margin: 0 auto;
+  width: 50px;
+  padding: 10px 0 10px 0;
+}
+hr {
+  border-top: 5px solid white;
+  margin-bottom: 20px;
 }
 
 .whiteBox {
@@ -63,36 +59,33 @@ button {
     background-color: white;
   }
 }
-.submit {
-  background-color: $gold;
-  color: $navy;
-  margin-top: 20px;
 
-  &:hover {
-    color: white;
-    background-color: $navy;
-  }
-}
-.icon {
-  display: table;
-  margin: 0 auto;
-  width: 50px;
-  padding: 10px 0 10px 0;
-}
-hr {
-  border-top: 5px solid white;
-  margin-bottom: 20px;
+//Fonts
+p {
+  text-align: center;
+  color: white;
 }
 
-//Hero Image
+h2 {
+  text-align: center;
+  color: white;
+  font-family: $arial;
+  font-size: 1.8129em;
+}
+
+h3 {
+  font-family: $arial;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+//Header
 .hero-image {
   background-image: url("/Images/Hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-//Header
 header {
   width: 100%;
   padding-bottom: 15px;
@@ -105,6 +98,7 @@ header {
     img {
       float: right;
       max-width: 50%;
+
       margin-top: 50%;
     }
   }
@@ -116,6 +110,7 @@ header {
   box-shadow: 2px 6px 15px 15px rgba(0, 0, 0, 0.08);
   font-weight: bold;
   font-family: $arial;
+  margin-top: -95px;
 
   input {
     padding: 5px;
@@ -130,7 +125,7 @@ header {
     color: $navy;
     text-align: left;
   }
-
+  //Title of Form
   .darkBanner {
     text-align: center;
     color: white;
@@ -144,9 +139,20 @@ header {
     font-weight: bold;
     margin-top: 0px;
   }
+
+  .submit {
+    background-color: $gold;
+    color: $navy;
+    margin-top: 20px;
+
+    &:hover {
+      color: white;
+      background-color: $navy;
+    }
+  }
 }
 
-//Go Bobcats!
+//Go Bobcats! Banner
 
 .bluePattern {
   padding: 20px 0px;
@@ -162,14 +168,14 @@ header {
   p {
     color: $navy;
   }
+}
 
-  .blueBar {
-    position: absolute;
-    height: 50px;
-    width: 100%;
-    background-color: $navy;
-    margin-top: 30px;
-  }
+//Blue bar in form Section
+.blueBar {
+  height: 40px;
+  width: 100%;
+  background-color: $navy;
+  margin-top: 50px;
 }
 
 //Hockey Photo Banner
@@ -188,6 +194,12 @@ header {
 
 //Links
 
+.largeIcon {
+  display: table;
+  margin: 0 auto;
+  width: 30%;
+  padding-bottom: 15px;
+}
 .links {
   background-image: url("/Images/TwoQ-01-01.png");
   background-position: center;
@@ -195,13 +207,6 @@ header {
   background-size: cover;
   color: white;
   padding: 20px 0px;
-}
-
-.largeIcon {
-  display: table;
-  margin: 0 auto;
-  width: 30%;
-  padding-bottom: 15px;
 }
 
 a {
@@ -218,11 +223,7 @@ a {
   margin: 10px auto;
 }
 
-///TESTING
-
-.flex {
-  display: flex;
-}
+//Back to Top
 
 .item {
   position: relative;
@@ -231,8 +232,8 @@ a {
     align-self: end;
   }
 }
-
 .down {
   padding-bottom: 30px;
 }
+
 @import "mediaQueries";
