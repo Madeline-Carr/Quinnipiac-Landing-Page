@@ -37,7 +37,8 @@ p {
 .whiteBox {
   background-color: white;
   border-radius: 20px;
-  position: relative; }
+  position: relative;
+  padding: 10px; }
 
 button {
   display: table;
@@ -92,7 +93,6 @@ header {
 
 .form {
   bottom: 35px;
-  padding: 10px;
   box-shadow: 2px 6px 15px 15px rgba(0, 0, 0, 0.08); }
   .form p {
     color: black; }
