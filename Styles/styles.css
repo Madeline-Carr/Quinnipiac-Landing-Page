@@ -15,9 +15,6 @@ body {
 .center {
   text-align: center; }
 
-.flex {
-  display: flex; }
-
 .icon {
   display: table;
   margin: 0 auto;
